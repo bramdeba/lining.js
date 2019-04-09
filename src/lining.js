@@ -1,13 +1,3 @@
-/**
- * lining.js
- * Write css style for `line` in typography.
- * https://github.com/zmmbreeze/lining.
- *
- * @author zmmbreeze / @zhoumm
- */
-
-/* jshint sub:true, camelcase:false */
-
 (function (win, doc) {
     var emptyNodeNames = {
         'STYLE': true,
@@ -924,7 +914,7 @@
     lining.util = util;
 
     util.on(window, 'load', function () {
-        var elements = doc.querySelectorAll('[data-lining]');
+        var elements = doc.querySelectorAll('h1,h2,h3,h4,h5,h6');
         var e;
         for (var i = 0, l = elements.length; i < l; i++) {
             e = elements[i];
